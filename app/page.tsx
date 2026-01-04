@@ -28,7 +28,7 @@ export default function HomePage() {
             </Link>
             <Link
               href="/post-job"
-              className="px-8 py-4 border-2 border-gray-300 rounded-xl font-semibold hover:border-blue-600 hover:text-blue-600 transition-all"
+              className="px-8 py-4 border-2  text-gray-800 border-gray-700 rounded-xl font-semibold hover:border-blue-600 hover:text-blue-600 transition-all"
             >
               Post a Job
             </Link>
@@ -38,15 +38,15 @@ export default function HomePage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 w-full max-w-4xl mt-8">
             <div className="p-6 bg-white rounded-2xl shadow-md hover:shadow-xl transition-all hover:-translate-y-1">
               <div className="text-4xl font-bold text-blue-600 mb-2">50K+</div>
-              <div className="text-gray-600 font-medium">Active Jobs</div>
+              <div className="text-gray-800 font-medium">Active Jobs</div>
             </div>
             <div className="p-6 bg-white rounded-2xl shadow-md hover:shadow-xl transition-all hover:-translate-y-1">
               <div className="text-4xl font-bold text-blue-600 mb-2">200+</div>
-              <div className="text-gray-600 font-medium">Companies</div>
+              <div className="text-gray-800 font-medium">Companies</div>
             </div>
             <div className="p-6 bg-white rounded-2xl shadow-md hover:shadow-xl transition-all hover:-translate-y-1">
               <div className="text-4xl font-bold text-blue-600 mb-2">95%</div>
-              <div className="text-gray-600 font-medium">Success Rate</div>
+              <div className="text-gray-800 font-medium">Success Rate</div>
             </div>
           </div>
         </section>
@@ -54,7 +54,7 @@ export default function HomePage() {
         {/* Features Section */}
         <section className="py-20 px-6 bg-white">
           <div className="max-w-6xl mx-auto">
-            <h2 className="text-4xl font-bold text-center mb-4">Why Choose CareerNest?</h2>
+            <h2 className="text-4xl font-bold text-center mb-4 text-gray-800">Why Choose CareerNest?</h2>
             <p className="text-gray-600 text-center mb-16 max-w-2xl mx-auto">
               We provide the tools and connections you need to succeed in your career journey
             </p>
@@ -64,7 +64,7 @@ export default function HomePage() {
                 <div className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center mb-4 text-white text-2xl">
                   🎯
                 </div>
-                <h3 className="text-xl font-bold mb-3">Smart Matching</h3>
+                <h3 className="text-xl font-bold mb-3 text-gray-800">Smart Matching</h3>
                 <p className="text-gray-600">Our AI-powered algorithm matches you with the perfect opportunities based on your skills and preferences.</p>
               </div>
               
@@ -72,7 +72,7 @@ export default function HomePage() {
                 <div className="w-12 h-12 bg-purple-600 rounded-lg flex items-center justify-center mb-4 text-white text-2xl">
                   ⚡
                 </div>
-                <h3 className="text-xl font-bold mb-3">Fast Process</h3>
+                <h3 className="text-xl font-bold mb-3 text-gray-800">Fast Process</h3>
                 <p className="text-gray-600">Apply to jobs in seconds and get responses faster than traditional job boards.</p>
               </div>
               
@@ -80,7 +80,7 @@ export default function HomePage() {
                 <div className="w-12 h-12 bg-green-600 rounded-lg flex items-center justify-center mb-4 text-white text-2xl">
                   🤝
                 </div>
-                <h3 className="text-xl font-bold mb-3">Verified Companies</h3>
+                <h3 className="text-xl font-bold mb-3 text-gray-800">Verified Companies</h3>
                 <p className="text-gray-600">All companies on our platform are verified to ensure quality and legitimacy.</p>
               </div>
             </div>
