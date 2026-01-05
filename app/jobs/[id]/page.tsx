@@ -2,7 +2,7 @@ import { jobs } from "@/data/jobs";
 import { notFound } from "next/navigation";
 
 type Props = {
-  params: { id: string };
+  params: Promise<{ id: string }>;
 };
 
 export function generateStaticParams() {
@@ -11,8 +11,9 @@ export function generateStaticParams() {
   }));
 }
 
-export default function JobDetailsPage({ params }: Props) {
-  const job = jobs.find(j => j.id === params.id);
+export default async function JobDetailsPage({ params }: Props) {
+    const { id } = await params;
+    const job = jobs.find(j => j.id === id);
 
   if (!job) return notFound();
 
