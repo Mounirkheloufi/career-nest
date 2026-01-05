@@ -30,8 +30,8 @@ export default function HomePage() {
           </svg>
         </div>
 
-        <div className="relative flex flex-col items-center justify-center text-center py-24 px-6 max-w-5xl mx-auto">
-          <div className="inline-flex items-center gap-2 px-4 py-2 bg-orange-100 text-orange-700 rounded-full text-sm font-medium mb-8">
+        <div className="relative flex flex-col items-center justify-center text-center py-15 px-6 max-w-5xl mx-auto">
+          <div className="inline-flex items-center gap-2 px-4 py-2 bg-blue-200 text-blue-600 rounded-full text-sm font-medium mb-8">
             <span className="text-lg">✏️</span>
             Trusted by 10,000+ professionals
           </div>
@@ -81,7 +81,7 @@ export default function HomePage() {
       <section className="py-2 px-6 bg-white">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-16 text-gray-900">
-            Why Choose <span className="text-blue-600">CareerNest?</span>
+            Why Choose <span className="text-blue-600">CareerNest ?</span>
           </h2>
           
           <div className="grid md:grid-cols-3 gap-8">
