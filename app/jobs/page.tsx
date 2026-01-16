@@ -2,32 +2,48 @@
 import { jobs } from "@/data/jobs";
 import JobCard from "@/components/jobs/JobCard";
 import JobFilter from "@/components/jobs/JobFilter";
+import Image from "next/image";
 
 export default function JobsPage() {
   return (
     <main className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
-      {/* Hero Section with Search */}
-      <section className="bg-white border-b border-gray-200">
-        <div className="max-w-7xl mx-auto px-6 py-12">
-          <h1 className="text-4xl font-bold text-gray-900 mb-8 text-center">
-            Find Your Next Opportunity
-          </h1>
-          
-          {/* Search Bar */}
-          <div className="max-w-2xl mx-auto">
-            <div className="flex gap-3">
-              <input
-                type="text"
-                placeholder="Front end seat company ..."
-                className="flex-1 px-4 py-3 border-2 border-gray-300 rounded-lg focus:outline-none focus:border-blue-500 text-gray-700"
-              />
-              <button className="px-8 py-3 bg-blue-600 text-white rounded-lg font-semibold hover:bg-blue-700 transition-colors">
-                Search
-              </button>
-            </div>
-          </div>
-        </div>
-      </section>
+      {/* Hero Section with Background */}
+<section className="relative overflow-hidden border-b border-gray-200">
+  
+  {/* Background Image */}
+  <div className="absolute inset-0 -z-10">
+    <Image
+      src="/clouds-bg.png"
+      alt="Clouds background"
+      fill
+      priority
+      className="object-cover opacity-120"
+    />
+  </div>
+
+  {/* Overlay (optional but recommended) */}
+  <div className="absolute inset-0 bg-white/70 backdrop-blur-sm -z-10" />
+
+  <div className="relative max-w-7xl mx-auto px-6 py-20">
+    <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-8 text-center">
+      Find Your Next Opportunity
+    </h1>
+
+    {/* Search Bar */}
+    <div className="max-w-2xl mx-auto">
+      <div className="flex gap-3 bg-white/90 backdrop-blur-md p-3 rounded-2xl shadow-lg">
+        <input
+          type="text"
+          placeholder="Frontend, company, location..."
+          className="flex-1 px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500 text-gray-700"
+        />
+        <button className="px-8 py-3 bg-blue-600 text-white rounded-lg font-semibold hover:bg-blue-700 transition">
+          Search
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
 
       {/* Main Content */}
       <div className="max-w-7xl mx-auto px-6 py-8">
